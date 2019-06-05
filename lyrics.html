@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lyrics and Emotion Study</title>
+    <script src="jspsych.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="plugins/jspsych-image-keyboard-response.js"></script>
+    <script src="plugins/jspsych-audio-button-response.js"></script>
+    <script src="plugins/jspsych-survey-likert.js"></script>
+    <script src="plugins/jspsych-image-button-response.js"></script>
+    <script src="plugins/jspsych-survey-text.js"></script>
+    <script src="plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="plugins/jspsych-image-slider-response.js"></script>
+    <script src="plugins/jspsych-instructions.js"></script>
+    <link rel="stylesheet" href="css/jspsych.css"></link>
+  </head>
+  <body></body>
+  <script>
+
+/* DON'T LOOK AT MY GARBAGEEEEEEEE */ 
+
+    /* create timeline */
+    var timeline = [];
+
+   /* Welcome and IRB */
+
+    var welcome_block = {
+    type: 'instructions',
+    pages: ["<p>Welcome to this experiment on music listening!</p>" +
+	    "<p> Please make sure you are using either Google Chrome or Firefox.</p>" +
+	    "<p> Please click NEXT to start the survey!</p>",
+	
+          "<p>Before collecting any data, we are required to obtain a confirmation of consent for all participants.</p>" 
+    	+ "<p>Please read the following statement: </p>" 
+        + "<p>This study will .... You may choose not to participate or to withdraw from the study at any time without penalty or loss of any benefit. All data will be made anonymous and all efforts will be made to keep data private and secure. For questions concerning participant rights, feel free to contact Dr. Dennis Landin, chair of the Institutional Review Board at either (225)-578-8692 or irb@lsu.edu.</p>"
+        + "<p>If you are willing to partake in this study, please press NEXT to begin the survey." ,
+
+      	   '<p>Thank you for choosing to participate in this survey!</p>' +
+    	        "<p>Please begin by ...</p>"],
+
+    show_clickable_nav: true
+  }
+
+    timeline.push(welcome_block);
+
+/* --------------------- EXPERIMENT LINE--------------------------------------------  */
+
+var scale_9 = ["Strongly Disagree", "","","", "Neutral","","", "", "Strongly Agree"];
+
+
+  var audio_test = {
+    type: 'audio-button-response',
+    stimulus: 'sound/speech_green.mp3',
+    choices: ['Yes', 'No'],
+    prompt: "<p>Audio is currently playing, please adjust the volume to a comfortable level then indicate if you can hear the music.</p>"
+  }
+
+timeline.push(audio_test);
+
+
+/* This is loop attempt  */
+
+var main_loop = {
+	timeline: [
+	{
+		type: 'audio-button-response',
+		trial_duration: 30000,
+	        response_ends_trial: true, // Change to false 
+	        stimulus: jsPsych.timelineVariable('song'),
+		choices: ['Audio Playing'],
+		prompt: "<p>Text for when song is playing, can remove buttons </p>" 
+	},
+	{
+		type: 'survey-likert',
+    		preamble: 'Here is where your prompt would go',
+    		questions: [
+		{prompt: "Happy", labels: scale_9},
+		{prompt: "Calm", labels: scale_9},
+		{prompt: "Sad", labels: scale_9},
+		{prompt: "Angry", labels: scale_9},
+		{prompt: "Familiar", labels: scale_9}]
+	}
+		],
+	timeline_variables: [
+		        { song: 'sound/thatsAll.m4a'},
+			{ song: 'sound/speech_green.mp3'}
+    ]
+}
+			
+timeline.push(main_loop);
+
+/* Ask them to listen to song, then rate on a nine point scale what it would be */
+
+  var song_here = {
+    type: 'audio-button-response',
+    trial_duration: 30000,
+    response_ends_trial: true,// change to false post debug
+    stimulus: 'sound/thatsAll.m4a',
+    choices: ['Audio Playing'],
+    prompt: "<p>Text for when song is playing, can remove buttons </p>"
+  }
+
+timeline.push(song_here);
+
+
+var likert_page = {
+    type: 'survey-likert',
+    preamble: 'Here is where your prompt would go',
+    questions: [
+	{prompt: "Happy", labels: scale_9},
+	{prompt: "Calm", labels: scale_9},
+	{prompt: "Sad", labels: scale_9},
+	{prompt: "Angry", labels: scale_9},
+	{prompt: "Familiar", labels: scale_9}
+],
+};
+
+timeline.push(likert_page);
+
+
+/* Demographic Information Here */
+
+
+
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function() {
+	jsPsych.data.get().localSave('csv','mydata.csv');	
+       // jsPsych.data.displayData();
+      }
+    });
+
+/* Online Data Save Function */
+
+/* 
+
+function saveData(name, data){
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({filename: name, filedata: data}));
+}
+
+
+jsPsych.init({
+   timeline: timeline,
+      on_finish: function() { saveData(subject_id,jsPsych.data.get().csv());}
+    }); 
+
+*/
+
+  </script>
+</html>
+
+
