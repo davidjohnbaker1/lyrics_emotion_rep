@@ -1,36 +1,32 @@
-bambi_Lyrics_08.mp3
-bambi_Melody_24.mp3
-dancinInTheMoonlightC_Melody_03.mp3
-dancinInTheMoonlightC_Melody_19.mp3
-dream_Lyrics_11.mp3
-dream_Melody_27.mp3
-everyTimeWeSayGoodbye_Lyrics_07.mp3
-everyTimeWeSayGoodbye_Melody_23.mp3
-goognightMoon_Lyrics_09.mp3
-goognightMoon_Melody_25.mp3
-iWishYouLove_Lyrics_12.mp3
-iWishYouLove_Melody_28.mp3
-noMoreMissNice_Lyrics_16.mp3
-noMoreMissNice_Melody_32.mp3
-onMusic_Lyrics_01.mp3
-onMusic_Melody_17.mp3
-owlAPussyCat_Lyrics_02.mp3
-owlAPussyCat_Melody_18.mp3
-silentMoon_Lyrics_10.mp3
-silentMoon_Melody_26.mp3
-speech_blue.mp3
-speech_green.mp3
-speech_joke.mp3
-speech_red.mp3
-takeYouAb_Lyrics_04.mp3
-takeYouAb_Melody_20.mp3
-thatsAll_Lyrics_15.mp3
-thatsAll_Melody_31.mp3
-theCage_Lyrics_14.mp3
-theCage_Melody_30.mp3
-theCrucifixion_Lyrics_05.mp3
-theCrucifixion_Melody_21.mp3
-toThisWeveCome_Lyrics_13.mp3
-toThisWeveCome_Melody_29.mp3
-willowSong_Lyrics_06.mp3
-willowSong_Melody_22.mp3
+{ song: 'sound/bambi_Lyrics_08.mp3'},
+{ song: 'sound/bambi_Melody_24.mp3'},
+{ song: 'sound/dancinInTheMoonlightC_Melody_03.mp3'},
+{ song: 'sound/dancinInTheMoonlightC_Melody_19.mp3'},
+{ song: 'sound/dream_Lyrics_11.mp3'},
+{ song: 'sound/dream_Melody_27.mp3'},
+{ song: 'sound/everyTimeWeSayGoodbye_Lyrics_07.mp3'},
+{ song: 'sound/everyTimeWeSayGoodbye_Melody_23.mp3'},
+{ song: 'sound/goognightMoon_Lyrics_09.mp3'},
+{ song: 'sound/goognightMoon_Melody_25.mp3'},
+{ song: 'sound/iWishYouLove_Lyrics_12.mp3'},
+{ song: 'sound/iWishYouLove_Melody_28.mp3'},
+{ song: 'sound/noMoreMissNice_Lyrics_16.mp3'},
+{ song: 'sound/noMoreMissNice_Melody_32.mp3'},
+{ song: 'sound/onMusic_Lyrics_01.mp3'},
+{ song: 'sound/onMusic_Melody_17.mp3'},
+{ song: 'sound/owlAPussyCat_Lyrics_02.mp3'},
+{ song: 'sound/owlAPussyCat_Melody_18.mp3'},
+{ song: 'sound/silentMoon_Lyrics_10.mp3'},
+{ song: 'sound/silentMoon_Melody_26.mp3'},
+{ song: 'sound/takeYouAb_Lyrics_04.mp3'},
+{ song: 'sound/takeYouAb_Melody_20.mp3'},
+{ song: 'sound/thatsAll_Lyrics_15.mp3'},
+{ song: 'sound/thatsAll_Melody_31.mp3'},
+{ song: 'sound/theCage_Lyrics_14.mp3'},
+{ song: 'sound/theCage_Melody_30.mp3'},
+{ song: 'sound/theCrucifixion_Lyrics_05.mp3'},
+{ song: 'sound/theCrucifixion_Melody_21.mp3'},
+{ song: 'sound/toThisWeveCome_Lyrics_13.mp3'},
+{ song: 'sound/toThisWeveCome_Melody_29.mp3'},
+{ song: 'sound/willowSong_Lyrics_06.mp3'},
+{ song: 'sound/willowSong_Melody_22.mp3'},
