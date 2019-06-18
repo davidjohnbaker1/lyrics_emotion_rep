@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lyrics and Emotion Study</title>
+    <script src="jspsych.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="plugins/jspsych-image-keyboard-response.js"></script>
+    <script src="plugins/jspsych-audio-button-response.js"></script>
+    <script src="plugins/jspsych-survey-likert.js"></script>
+    <script src="plugins/jspsych-image-button-response.js"></script>
+    <script src="plugins/jspsych-survey-text.js"></script>
+    <script src="plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="plugins/jspsych-image-slider-response.js"></script>
+    <script src="plugins/jspsych-instructions.js"></script>
+    <link rel="stylesheet" href="css/jspsych.css"></link>
+  </head>
+  <body></body>
+  <script>
+
+    /* create timeline */
+    var timeline = [];
+
+    /* Preload Audio */
+ var audio = [	'sound/speech_blue.mp3', 
+		'sound/speech_green.mp3'
+			]
+
+
+/* --------------------- EXPERIMENT LINE--------------------------------------------  */
+
+var scale_9 = ["Strongly Disagree", "","","", "Neutral","","", "", "Strongly Agree"];
+
+/* This is loop attempt  */
+
+var main_loop = {
+	timeline: [
+	{
+		type: 'audio-button-response',
+		trial_duration: 30000,
+	        response_ends_trial: true, // Change to false 
+	        stimulus: jsPsych.timelineVariable('song'),
+		choices: ['Audio Playing'],
+		prompt: jsPsych.timelineVariable('prompt')
+	},
+	{
+		type: 'survey-likert',
+    		preamble: 'Please rate the extent...',
+    		questions: [
+		{prompt: "Happy", labels: scale_9},
+		{prompt: "Calm", labels: scale_9},
+		{prompt: "Sad", labels: scale_9},
+		{prompt: "Angry", labels: scale_9},
+		{prompt: "Familiar", labels: scale_9}]
+	}
+		],
+	timeline_variables: [
+			{ song: 'sound/speech_blue.mp3', prompt: 'This is the blue song'},
+			{ song: 'sound/speech_green.mp3', prompt: 'This is the green song'}
+			
+    ],
+	randomize: false 
+}
+			
+timeline.push(main_loop);
+
+    jsPsych.init({
+      timeline: timeline,
+      preload_audio: audio,
+      on_finish: function() {
+	jsPsych.data.get().localSave('csv','mydata.csv');	
+       // jsPsych.data.displayData();
+      }
+    });
+
+  </script>
+</html>
+
+

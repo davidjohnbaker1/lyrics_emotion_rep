@@ -1,0 +1,37 @@
+   /* Pre-load Audio */ 
+
+    var audio = [	'sound/bambi_Lyrics_08.mp3',
+			'sound/bambi_Melody_24.mp3',
+			'sound/dancinInTheMoonlightC_Lyrics_03.mp3', 
+			'sound/dancinInTheMoonlightC_Melody_19.mp3',
+			'sound/dream_Lyrics_11.mp3',
+			'sound/dream_Melody_27.mp3',
+			'sound/everyTimeWeSayGoodbye_Lyrics_07.mp3',
+			'sound/everyTimeWeSayGoodbye_Melody_23.mp3',
+			'sound/goognightMoon_Lyrics_09.mp3',
+			'sound/goognightMoon_Melody_25.mp3',
+			'sound/iWishYouLove_Lyrics_12.mp3',
+			'sound/iWishYouLove_Melody_28.mp3',
+			'sound/noMoreMissNice_Lyrics_16.mp3',
+			'sound/noMoreMissNice_Melody_32.mp3',
+			'sound/onMusic_Lyrics_01.mp3',
+			'sound/onMusic_Melody_17.mp3',
+			'sound/owlAPussyCat_Lyrics_02.mp3',
+			'sound/owlAPussyCat_Melody_18.mp3',
+			'sound/silentMoon_Lyrics_10.mp3',
+			'sound/silentMoon_Melody_26.mp3',
+			'sound/takeYouAb_Lyrics_04.mp3',
+			'sound/takeYouAb_Melody_20.mp3',
+			'sound/thatsAll_Lyrics_15.mp3',
+			'sound/thatsAll_Melody_31.mp3',
+			'sound/theCage_Lyrics_14.mp3',
+			'sound/theCage_Melody_30.mp3',
+			'sound/theCrucifixion_Lyrics_05.mp3',
+			'sound/theCrucifixion_Melody_21.mp3',
+			'sound/toThisWeveCome_Lyrics_13.mp3',
+			'sound/toThisWeveCome_Melody_29.mp3',
+			'sound/willowSong_Lyrics_06.mp3', 
+			'sound/willowSong_Melody_22.mp3'
+			]
+
+
