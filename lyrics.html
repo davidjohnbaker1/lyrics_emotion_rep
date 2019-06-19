@@ -69,10 +69,9 @@ timeline.push(audio_test);
 
 /* Need to still :
 
-	Swap out Randomize
-	Get right listing of stimuli for blocks
 	Change text
 	add in instructional text 
+
 		*/
 
 
@@ -101,47 +100,51 @@ var block_1 = {
 		],
 	timeline_variables: [
 
-
 			/* BATCH 1 */
 
-			{ song: 'sound/onMusic_Lyrics_01.mp3', prompt:"<p>THIS IS BLOCK A Fill your days with music<br>With tender, joyful song,<br>Dream your dreams to music,<br>You’ll help your dreams along<br></p>", required: true},
-			{ song: 'sound/owlAPussyCat_Lyrics_02.mp3', prompt: "<p>The Owl and the Pussycat went to sea<br>In a beautiful pea-green boat,<br>They took some honey, and plenty of money,<br>Wrapped up in a five pound note.<br>The Owl looked up to the stars above,<br>And sang to a small guitar<br></p>", required: true},
+			// Lyrics 
+			{ song: 'sound/onMusic_Lyrics_01.mp3', prompt:"<p>Fill your days with music<br>With tender, joyful song,<br>Dream your dreams to music,<br>You’ll help your dreams along<br></p>", required: true},
 			{ song: 'sound/dancinInTheMoonlightC_Lyrics_03.mp3', prompt: "<p>We get it almost every night<br>When that moon is big and bright<br>It's a supernatural delight<br>Everybody's dancin' in the moonlight<br></p>", required: true},
-			{ song: 'sound/takeYouAb_Lyrics_04.mp3', prompt: "<p>It's a lovely night, one of the first in some good time<br>For all of my years, i've been living by the rules of your smile<br>There's a lot to recover from that night out<br>When you leaned in and whispered, 'yeah I'm trying to take you out.'<br></p>", required: true},
 			{ song: 'sound/theCrucifixion_Lyrics_05.mp3', prompt:"<p>At the cry of the first bird<br>They began to crucify Thee, O Swan!<br></p>", required: true},
-			{ song: 'sound/willowSong_Lyrics_06.mp3', prompt: "<p>So far from each other,<br>While the days pass in their emptiness away,<br>Oh my love, must it be forever,<br>Never once again to meet as on that day,<br>And never rediscover the way of telling,<br>The way of knowing all our hearts would say.<br></p>", required: true},
 			{ song: 'sound/everyTimeWeSayGoodbye_Lyrics_07.mp3', prompt:"<p>Ev’ry time we say goodbye,<br>I die a little<br>Ev’ry time we say goodbye,<br>I wonder why a little<br></p>", required: true},
-			{ song: 'sound/bambi_Lyrics_08.mp3', prompt:"<p>But I can read between the lines <br>I want to run from everything<br>But my legs won't work, it's clear to me<br>I haven't been much myself<br>And I feel like my friends are being put through this hell I'm feeling<br>I think that I'm living, if you could call it living<br>So brash and unforgiving' <br>Ruled by the vibe I'm bringing<br>Serving myself<br></p>", required: true},
 			{ song: 'sound/goognightMoon_Lyrics_09.mp3', prompt: "<p>Goodnight room<br>Goodnight moon<br>Goodnight cow jumping over the moon<br></p>", required: true},
-			{ song: 'sound/silentMoon_Lyrics_10.mp3', prompt:"<p>Your hands lie open in the long, fresh grass,<br>The finger-points look through like rosy blooms:<br>Your eyes smile peace.<br></p>", required: true},
 			{ song: 'sound/dream_Lyrics_11.mp3', prompt:"<p>I was a little girl alone in my little world,<br>Who dreamed of a little home for me.<br>I played pretend between the trees,<br>And fed my house guests bark and leaves,<br>And laughed in my pretty bed of green.<br>I had a dream that I could fly from the highest swing,<br>I had a dream.<br></p>", required: true},
-			{ song: 'sound/iWishYouLove_Lyrics_12.mp3', prompt: "<p>I wish you bluebirds in the spring,<br>To give your heart a song to sing,<br>And then a kiss, but more than this,<br>I wish you love.<br></p>", required: true},
 			{ song: 'sound/toThisWeveCome_Lyrics_13.mp3', prompt: "<p>My child is dead. John's mother is dying...<br>My own life is in danger.<br>I ask you for help, and all you give me is... papers!Papers! Papers! Papers!<br></p>", required: true},
-
-			/* BATCH 2 */
-
-			{ song: 'sound/dancinInTheMoonlightC_Melody_19.mp3', required: true},
+			// Melody Songs 
+			{ song: 'sound/owlAPussyCat_Melody_18.mp3', required: true},
+			{ song: 'sound/takeYouAb_Melody_20.mp3', required: true},
+			{ song: 'sound/willowSong_Melody_22.mp3', required: true} ,
 			{ song: 'sound/bambi_Melody_24.mp3', required: true},
-			{ song: 'sound/dream_Melody_27.mp3', required: true},
+			{ song: 'sound/silentMoon_Melody_26.mp3', required: true},
+			{ song: 'sound/iWishYouLove_Melody_28.mp3', required: true},
+			{ song: 'sound/theCage_Melody_30.mp3', required: true},
+			{ song: 'sound/noMoreMissNice_Melody_32.mp3', required: true} 
+/* 
+
+			// Melody 	
+			{ song: 'sound/thatsAll_Lyrics_15.mp3', prompt:"<p>Running around, staying out all night<br>Taking it all instead of taking one bite<br>Living with you’s just putting me through it all of the time.<br>I could leave but I won’t go,<br>It’d be easier I know.<br>I can’t feel a thing from my head down to my toes<br>But why does it always seem to be<br>Me looking at you, you looking at me,<br>It’s always the same, it’s just a shame, that’s all.<br></p>", required: true},
+			{ song: 'sound/onMusic_Melody_17.mp3', required: true},
+			{ song: 'sound/dancinInTheMoonlightC_Melody_19.mp3', required: true},
+			{ song: 'sound/theCrucifixion_Melody_21.mp3', required: true},
 			{ song: 'sound/everyTimeWeSayGoodbye_Melody_23.mp3', required: true},
 			{ song: 'sound/goognightMoon_Melody_25.mp3', required: true},
-			{ song: 'sound/iWishYouLove_Melody_28.mp3', required: true},
-			{ song: 'sound/noMoreMissNice_Lyrics_16.mp3', prompt: "<p>If you think I'll take you back<br>Your in for a surprise<br>You'll never be the one for me. <br>Second time around I know<br>You gotta pay the price<br>You got to be, you're not to be. <br>Fi you think I'll let you play <br>This game not once, but twice<br>There will be no more miss nice. <br></p>", required: true},
-			{ song: 'sound/noMoreMissNice_Melody_32.mp3', required: true},
-			{ song: 'sound/onMusic_Melody_17.mp3', required: true},
-			{ song: 'sound/owlAPussyCat_Melody_18.mp3', required: true},
-			{ song: 'sound/silentMoon_Melody_26.mp3', required: true},
-			{ song: 'sound/takeYouAb_Melody_20.mp3', required: true},
-			{ song: 'sound/thatsAll_Lyrics_15.mp3', prompt:"<p>Running around, staying out all night<br>Taking it all instead of taking one bite<br>Living with you’s just putting me through it all of the time.<br>I could leave but I won’t go,<br>It’d be easier I know.<br>I can’t feel a thing from my head down to my toes<br>But why does it always seem to be<br>Me looking at you, you looking at me,<br>It’s always the same, it’s just a shame, that’s all.<br></p>", required: true},
-			{ song: 'sound/thatsAll_Melody_31.mp3', required: true},
-			{ song: 'sound/theCage_Lyrics_14.mp3', prompt:"<p>A leopard went around his cage<br>from one side back to the other side;<br>he stopped only when the keeper came around with meat;<br>A boy who had been there three hours<br>began to wonder, “Is life anything like that?”<br></p>", required: true},
-			{ song: 'sound/theCage_Melody_30.mp3', required: true},
-			{ song: 'sound/theCrucifixion_Melody_21.mp3', required: true},
+			{ song: 'sound/dream_Melody_27.mp3', required: true},
 			{ song: 'sound/toThisWeveCome_Melody_29.mp3', required: true},
-			{ song: 'sound/willowSong_Melody_22.mp3', required: true} 
+			{ song: 'sound/thatsAll_Melody_31.mp3', required: true},	
+
+			// Lyrics 
+
+			{ song: 'sound/owlAPussyCat_Lyrics_02.mp3', prompt: "<p>The Owl and the Pussycat went to sea<br>In a beautiful pea-green boat,<br>They took some honey, and plenty of money,<br>Wrapped up in a five pound note.<br>The Owl looked up to the stars above,<br>And sang to a small guitar<br></p>", required: true},
+			{ song: 'sound/takeYouAb_Lyrics_04.mp3', prompt: "<p>It's a lovely night, one of the first in some good time<br>For all of my years, i've been living by the rules of your smile<br>There's a lot to recover from that night out<br>When you leaned in and whispered, 'yeah I'm trying to take you out.'<br></p>", required: true},
+			{ song: 'sound/willowSong_Lyrics_06.mp3', prompt: "<p>So far from each other,<br>While the days pass in their emptiness away,<br>Oh my love, must it be forever,<br>Never once again to meet as on that day,<br>And never rediscover the way of telling,<br>The way of knowing all our hearts would say.<br></p>", required: true},
+			{ song: 'sound/bambi_Lyrics_08.mp3', prompt:"<p>But I can read between the lines <br>I want to run from everything<br>But my legs won't work, it's clear to me<br>I haven't been much myself<br>And I feel like my friends are being put through this hell I'm feeling<br>I think that I'm living, if you could call it living<br>So brash and unforgiving' <br>Ruled by the vibe I'm bringing<br>Serving myself<br></p>", required: true},
+			{ song: 'sound/silentMoon_Lyrics_10.mp3', prompt:"<p>Your hands lie open in the long, fresh grass,<br>The finger-points look through like rosy blooms:<br>Your eyes smile peace.<br></p>", required: true},
+			{ song: 'sound/iWishYouLove_Lyrics_12.mp3', prompt: "<p>I wish you bluebirds in the spring,<br>To give your heart a song to sing,<br>And then a kiss, but more than this,<br>I wish you love.<br></p>", required: true},
+			{ song: 'sound/noMoreMissNice_Lyrics_16.mp3', prompt: "<p>If you think I'll take you back<br>Your in for a surprise<br>You'll never be the one for me. <br>Second time around I know<br>You gotta pay the price<br>You got to be, you're not to be. <br>Fi you think I'll let you play <br>This game not once, but twice<br>There will be no more miss nice. <br></p>", required: true},
+			{ song: 'sound/theCage_Lyrics_14.mp3', prompt:"<p>A leopard went around his cage<br>from one side back to the other side;<br>he stopped only when the keeper came around with meat;<br>A boy who had been there three hours<br>began to wonder, “Is life anything like that?”<br></p>", required: true} */
 
     ],
-	randomize_order: false 
+	randomize_order: true 
 }
 			
 
@@ -170,47 +173,51 @@ var block_2 = {
 		],
 	timeline_variables: [
 
-
-			/* BATCH 1 */
-
-			{ song: 'sound/onMusic_Lyrics_01.mp3', prompt:"<p>THIS IS BLOCK B Fill your days with music<br>With tender, joyful song,<br>Dream your dreams to music,<br>You’ll help your dreams along<br></p>", required: true},
-			{ song: 'sound/owlAPussyCat_Lyrics_02.mp3', prompt: "<p>The Owl and the Pussycat went to sea<br>In a beautiful pea-green boat,<br>They took some honey, and plenty of money,<br>Wrapped up in a five pound note.<br>The Owl looked up to the stars above,<br>And sang to a small guitar<br></p>", required: true},
+/*
+			// Lyrics 
+			{ song: 'sound/onMusic_Lyrics_01.mp3', prompt:"<p>THIS IS BLOCK A Fill your days with music<br>With tender, joyful song,<br>Dream your dreams to music,<br>You’ll help your dreams along<br></p>", required: true},
 			{ song: 'sound/dancinInTheMoonlightC_Lyrics_03.mp3', prompt: "<p>We get it almost every night<br>When that moon is big and bright<br>It's a supernatural delight<br>Everybody's dancin' in the moonlight<br></p>", required: true},
-			{ song: 'sound/takeYouAb_Lyrics_04.mp3', prompt: "<p>It's a lovely night, one of the first in some good time<br>For all of my years, i've been living by the rules of your smile<br>There's a lot to recover from that night out<br>When you leaned in and whispered, 'yeah I'm trying to take you out.'<br></p>", required: true},
 			{ song: 'sound/theCrucifixion_Lyrics_05.mp3', prompt:"<p>At the cry of the first bird<br>They began to crucify Thee, O Swan!<br></p>", required: true},
-			{ song: 'sound/willowSong_Lyrics_06.mp3', prompt: "<p>So far from each other,<br>While the days pass in their emptiness away,<br>Oh my love, must it be forever,<br>Never once again to meet as on that day,<br>And never rediscover the way of telling,<br>The way of knowing all our hearts would say.<br></p>", required: true},
 			{ song: 'sound/everyTimeWeSayGoodbye_Lyrics_07.mp3', prompt:"<p>Ev’ry time we say goodbye,<br>I die a little<br>Ev’ry time we say goodbye,<br>I wonder why a little<br></p>", required: true},
-			{ song: 'sound/bambi_Lyrics_08.mp3', prompt:"<p>But I can read between the lines <br>I want to run from everything<br>But my legs won't work, it's clear to me<br>I haven't been much myself<br>And I feel like my friends are being put through this hell I'm feeling<br>I think that I'm living, if you could call it living<br>So brash and unforgiving' <br>Ruled by the vibe I'm bringing<br>Serving myself<br></p>", required: true},
 			{ song: 'sound/goognightMoon_Lyrics_09.mp3', prompt: "<p>Goodnight room<br>Goodnight moon<br>Goodnight cow jumping over the moon<br></p>", required: true},
-			{ song: 'sound/silentMoon_Lyrics_10.mp3', prompt:"<p>Your hands lie open in the long, fresh grass,<br>The finger-points look through like rosy blooms:<br>Your eyes smile peace.<br></p>", required: true},
 			{ song: 'sound/dream_Lyrics_11.mp3', prompt:"<p>I was a little girl alone in my little world,<br>Who dreamed of a little home for me.<br>I played pretend between the trees,<br>And fed my house guests bark and leaves,<br>And laughed in my pretty bed of green.<br>I had a dream that I could fly from the highest swing,<br>I had a dream.<br></p>", required: true},
-			{ song: 'sound/iWishYouLove_Lyrics_12.mp3', prompt: "<p>I wish you bluebirds in the spring,<br>To give your heart a song to sing,<br>And then a kiss, but more than this,<br>I wish you love.<br></p>", required: true},
 			{ song: 'sound/toThisWeveCome_Lyrics_13.mp3', prompt: "<p>My child is dead. John's mother is dying...<br>My own life is in danger.<br>I ask you for help, and all you give me is... papers!Papers! Papers! Papers!<br></p>", required: true},
-
-			/* BATCH 2 */
-
-			{ song: 'sound/dancinInTheMoonlightC_Melody_19.mp3', required: true},
+			// Melody Songs 
+			{ song: 'sound/owlAPussyCat_Melody_18.mp3', required: true},
+			{ song: 'sound/takeYouAb_Melody_20.mp3', required: true},
+			{ song: 'sound/willowSong_Melody_22.mp3', required: true} ,
 			{ song: 'sound/bambi_Melody_24.mp3', required: true},
-			{ song: 'sound/dream_Melody_27.mp3', required: true},
+			{ song: 'sound/silentMoon_Melody_26.mp3', required: true},
+			{ song: 'sound/iWishYouLove_Melody_28.mp3', required: true},
+			{ song: 'sound/theCage_Melody_30.mp3', required: true},
+			{ song: 'sound/noMoreMissNice_Melody_32.mp3', required: true} */
+
+
+			// Melody 	
+			{ song: 'sound/thatsAll_Lyrics_15.mp3', prompt:"<p>Running around, staying out all night<br>Taking it all instead of taking one bite<br>Living with you’s just putting me through it all of the time.<br>I could leave but I won’t go,<br>It’d be easier I know.<br>I can’t feel a thing from my head down to my toes<br>But why does it always seem to be<br>Me looking at you, you looking at me,<br>It’s always the same, it’s just a shame, that’s all.<br></p>", required: true},
+			{ song: 'sound/onMusic_Melody_17.mp3', required: true},
+			{ song: 'sound/dancinInTheMoonlightC_Melody_19.mp3', required: true},
+			{ song: 'sound/theCrucifixion_Melody_21.mp3', required: true},
 			{ song: 'sound/everyTimeWeSayGoodbye_Melody_23.mp3', required: true},
 			{ song: 'sound/goognightMoon_Melody_25.mp3', required: true},
-			{ song: 'sound/iWishYouLove_Melody_28.mp3', required: true},
-			{ song: 'sound/noMoreMissNice_Lyrics_16.mp3', prompt: "<p>If you think I'll take you back<br>Your in for a surprise<br>You'll never be the one for me. <br>Second time around I know<br>You gotta pay the price<br>You got to be, you're not to be. <br>Fi you think I'll let you play <br>This game not once, but twice<br>There will be no more miss nice. <br></p>", required: true},
-			{ song: 'sound/noMoreMissNice_Melody_32.mp3', required: true},
-			{ song: 'sound/onMusic_Melody_17.mp3', required: true},
-			{ song: 'sound/owlAPussyCat_Melody_18.mp3', required: true},
-			{ song: 'sound/silentMoon_Melody_26.mp3', required: true},
-			{ song: 'sound/takeYouAb_Melody_20.mp3', required: true},
-			{ song: 'sound/thatsAll_Lyrics_15.mp3', prompt:"<p>Running around, staying out all night<br>Taking it all instead of taking one bite<br>Living with you’s just putting me through it all of the time.<br>I could leave but I won’t go,<br>It’d be easier I know.<br>I can’t feel a thing from my head down to my toes<br>But why does it always seem to be<br>Me looking at you, you looking at me,<br>It’s always the same, it’s just a shame, that’s all.<br></p>", required: true},
-			{ song: 'sound/thatsAll_Melody_31.mp3', required: true},
-			{ song: 'sound/theCage_Lyrics_14.mp3', prompt:"<p>A leopard went around his cage<br>from one side back to the other side;<br>he stopped only when the keeper came around with meat;<br>A boy who had been there three hours<br>began to wonder, “Is life anything like that?”<br></p>", required: true},
-			{ song: 'sound/theCage_Melody_30.mp3', required: true},
-			{ song: 'sound/theCrucifixion_Melody_21.mp3', required: true},
+			{ song: 'sound/dream_Melody_27.mp3', required: true},
 			{ song: 'sound/toThisWeveCome_Melody_29.mp3', required: true},
-			{ song: 'sound/willowSong_Melody_22.mp3', required: true}
+			{ song: 'sound/thatsAll_Melody_31.mp3', required: true},	
+
+			// Lyrics 
+
+			{ song: 'sound/owlAPussyCat_Lyrics_02.mp3', prompt: "<p>The Owl and the Pussycat went to sea<br>In a beautiful pea-green boat,<br>They took some honey, and plenty of money,<br>Wrapped up in a five pound note.<br>The Owl looked up to the stars above,<br>And sang to a small guitar<br></p>", required: true},
+			{ song: 'sound/takeYouAb_Lyrics_04.mp3', prompt: "<p>It's a lovely night, one of the first in some good time<br>For all of my years, i've been living by the rules of your smile<br>There's a lot to recover from that night out<br>When you leaned in and whispered, 'yeah I'm trying to take you out.'<br></p>", required: true},
+			{ song: 'sound/willowSong_Lyrics_06.mp3', prompt: "<p>So far from each other,<br>While the days pass in their emptiness away,<br>Oh my love, must it be forever,<br>Never once again to meet as on that day,<br>And never rediscover the way of telling,<br>The way of knowing all our hearts would say.<br></p>", required: true},
+			{ song: 'sound/bambi_Lyrics_08.mp3', prompt:"<p>But I can read between the lines <br>I want to run from everything<br>But my legs won't work, it's clear to me<br>I haven't been much myself<br>And I feel like my friends are being put through this hell I'm feeling<br>I think that I'm living, if you could call it living<br>So brash and unforgiving' <br>Ruled by the vibe I'm bringing<br>Serving myself<br></p>", required: true},
+			{ song: 'sound/silentMoon_Lyrics_10.mp3', prompt:"<p>Your hands lie open in the long, fresh grass,<br>The finger-points look through like rosy blooms:<br>Your eyes smile peace.<br></p>", required: true},
+			{ song: 'sound/iWishYouLove_Lyrics_12.mp3', prompt: "<p>I wish you bluebirds in the spring,<br>To give your heart a song to sing,<br>And then a kiss, but more than this,<br>I wish you love.<br></p>", required: true},
+			{ song: 'sound/noMoreMissNice_Lyrics_16.mp3', prompt: "<p>If you think I'll take you back<br>Your in for a surprise<br>You'll never be the one for me. <br>Second time around I know<br>You gotta pay the price<br>You got to be, you're not to be. <br>Fi you think I'll let you play <br>This game not once, but twice<br>There will be no more miss nice. <br></p>", required: true},
+			{ song: 'sound/theCage_Lyrics_14.mp3', prompt:"<p>A leopard went around his cage<br>from one side back to the other side;<br>he stopped only when the keeper came around with meat;<br>A boy who had been there three hours<br>began to wonder, “Is life anything like that?”<br></p>", required: true} 
+
 
     ],
-	randomize_order: false 
+	randomize_order: true 
 }
 			
 /* Push Block */ 
