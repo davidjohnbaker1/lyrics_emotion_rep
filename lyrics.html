@@ -34,16 +34,13 @@ var subject_id = prompt("Enter Participant Number");
     var welcome_block = {
     type: 'instructions',
     pages: ["<p>Welcome to this experiment on music listening!</p>" +
-	    "<p> Please make sure you are using either Google Chrome or Firefox.</p>" +
+	    "<p> Please make sure you are using Firefox as your browser.</p>" +
 	    "<p> Please click NEXT to start the survey!</p>",
 	
           "<p>Before collecting any data, we are required to obtain a confirmation of consent for all participants.</p>" 
-    	+ "<p>Please read the following statement: </p>" 
-        + "<p>This study will .... You may choose not to participate or to withdraw from the study at any time without penalty or loss of any benefit. All data will be made anonymous and all efforts will be made to keep data private and secure. For questions concerning participant rights, feel free to contact Dr. Dennis Landin, chair of the Institutional Review Board at either (225)-578-8692 or irb@lsu.edu.</p>"
-        + "<p>If you are willing to partake in this study, please press NEXT to begin the survey." ,
-
-      	   '<p>Thank you for choosing to participate in this survey!</p>' +
-    	        "<p>Please begin by ...</p>"],
+    	+ "<p>Please read the following statement: </p>" + 
+         "<p align='left'>I consent to serve as a participant in a research investigation that focuses on the memory abilities and reaction times of both children and adults. The study is entitled “An Investigation of Cognitive Processes” sponsored by Louisiana State University and is to be conducted under the direction of Emily Elliott, Ph.D.<br>I understand that the study will involve these procedures:  In the presence of one of the members of the research team, I will engage in a task with visual (lyrics) and aural stimuli (music).  Then I will be asked to indicate my response to the visual (lyrics) and aural stimuli through a nonverbal response such as a computer keypress or mouse-click.<br>Refusal to consent to participate will involve no penalty.<br>I understand that I am free to withdraw my consent and discontinue participation at any time without penalty.  I will receive the agreed-upon reward for the session even if I withdraw from the study before it is complete.  I understand that this study is not expected to involve risks or harm any greater that those ordinarily encountered in daily life.  I understand also that it is not possible to identify all potential risks in an experimental procedure, but that all reasonable safeguards will be taken to minimize the known and unknown potential risks.<br>The study has been discussed with me and all my questions have been answered. I may direct additional questions regarding study specifics to Emily Elliott, (225)578-7460. If I have questions about subjects' rights or other concerns, I can contact Dennis Landin, Chairman, LSU Institutional Review Board, irb@lsu.edu, (225)578-8692. I agree to participate in the study described above and acknowledge the researchers' obligation to provide me with a copy of this consent form if signed by me.</p>"
+        + "<p>If you are willing to partake in this study, please press NEXT to begin the survey."],
 
     show_clickable_nav: true
   }
@@ -57,22 +54,23 @@ var scale_9 = ["Strongly Disagree", "","","", "Neutral","","", "", "Strongly Agr
 
   var audio_test = {
     type: 'audio-button-response',
-    stimulus: 'sound/speech_green.mp3',
-    choices: ['Yes', 'No'],
-    prompt: "<p>Audio is currently playing, please adjust the volume to a comfortable level then indicate if you can hear the music.</p>"
+    stimulus: 'sound/soundcheck.mp3',
+    choices: ['Audio levels are OK!'],
+    prompt: "<p>Audio is currently playing.<br>Please adjust the volume of your headphones to a comfortable level.<br> If you cannot hear music, please call over the experimenter and they will help you.<br> When you are ready to begin, click NEXT.</p>"
   }
 
 timeline.push(audio_test);
 
+   /* Instruction */
 
-/* Here are the blocks  */
+    var instructions = {
+    type: 'instructions',
+    pages: ["<p>Here are the instructions for this experiment:<br>Listen to the following music examples, pay attention to the lyrics appeared on screen (if there are any). You will be ask questions relate to your feelings of the music after each audio example.</p>"],
 
-/* Need to still :
+    show_clickable_nav: true
+  }
 
-	Change text
-	add in instructional text 
-
-		*/
+    timeline.push(instructions);
 
 
 var block_1 = {
@@ -87,7 +85,10 @@ var block_1 = {
 	},
 	{
 		type: 'survey-likert',
-    		preamble: 'Please rate the extent...',
+    		preamble: 'Please give a rating to the following categories, regarding to the music just played.',
+
+// I feel like this prompt should be a bit more specific to emotions (felt/percieved). 
+
 		required: true,
     		questions: [
 		{prompt: "Happy", labels: scale_9, required: true},
@@ -96,7 +97,7 @@ var block_1 = {
 		{prompt: "Angry / Stressful", labels: scale_9, required: true},
 		{prompt: "Familiar", labels: scale_9, required: true}]
 	}
-/* Lyrics that Need to be changed: 4, 13, 16 , 15 check overall */
+
 		],
 	timeline_variables: [
 
