@@ -50,6 +50,7 @@ var subject_id = prompt("Enter Participant Number");
 
 var scale_9 = ["Strongly Disagree", "","","", "Neutral","","", "", "Strongly Agree"];
 
+var scale_9f = ["Have Never Heard This Song Before", "","May Have Heard Before","", "","","Recognize, but Not Familiar", "", "Have heard This Song Many Times Before and Know it Well"];
 
   var audio_test = {
     type: 'audio-button-response',
@@ -94,7 +95,7 @@ var block_1 = {
 		{prompt: "Calm", labels: scale_9, required: true},
 		{prompt: "Sad", labels: scale_9, required: true},
 		{prompt: "Angry / Stressful", labels: scale_9, required: true},
-		{prompt: "Familiar", labels: scale_9, required: true}]
+		{prompt: "Familiar", labels: scale_9f, required: true}]
 	}
 
 		],
@@ -168,7 +169,7 @@ var block_2 = {
 		{prompt: "Calm", labels: scale_9, required: true},
 		{prompt: "Sad", labels: scale_9, required: true},
 		{prompt: "Angry / Stressful", labels: scale_9, required: true},
-		{prompt: "Familiar", labels: scale_9, required: true}]
+		{prompt: "Familiar", labels: scale_9f, required: true}]
 	}
 /* Lyrics that Need to be changed: 4, 13, 16 , 15 check overall */
 		],
