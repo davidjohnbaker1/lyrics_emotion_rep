@@ -236,6 +236,29 @@ timeline = timeline.concat(random_order[0],random_order[1]);
 
 /* Demographic Information Here */
 
+var survey_trial_1 = {
+  type: 'survey-text',
+  questions: [{prompt: "Would you consider yourself to have normal hearing?"}]
+};
+
+timeline.push(survey_trial_1) 
+
+var survey_trial_2 = {
+  type: 'survey-text',
+  questions: [{prompt: "Is English your first langague?"}]
+};
+
+timeline.push(survey_trial_2) 
+
+var survey_trial_3 = {
+  type: 'survey-text',
+  questions: [{prompt: "Are you currently taking any medication that might have altered your performance in this experiment? If so, please list that medication here."}]
+};
+
+timeline.push(survey_trial_3) 
+
+
+
 
 
     jsPsych.init({
