@@ -264,6 +264,7 @@ timeline.push(survey_trial_3)
     jsPsych.init({
       timeline: timeline,
       preload_audio: audio,
+      use_webaudio: false,
       on_finish: function() {
 	jsPsych.data.get().localSave('csv','mydata.csv');	
        // jsPsych.data.displayData();

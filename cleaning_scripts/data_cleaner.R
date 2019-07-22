@@ -45,5 +45,5 @@ score_emotional_data <- function(fns=list.files(pattern="*.csv")){
 create_emo_dataset <- function(){
   filenames <- list.files(pattern = "data")
   bigdata <- do.call("rbind", lapply(filenames, read.csv, header = TRUE))
-  write.csv(bigdata,"../CURRENT_EMO_DATA.csv")
+  write.csv(bigdata,"../../CURRENT_EMO_DATA.csv")
 }
